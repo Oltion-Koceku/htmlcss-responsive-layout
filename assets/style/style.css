@@ -32,6 +32,7 @@ header {
 
 .d-flex {
   display: flex;
+  
 }
 
 .p-relative {
@@ -88,6 +89,10 @@ margin-bottom: 30px;
 
 /* /strategic */
 
+/* tesimonials */
+.testimonials .container.d-flex
+/* /tesimonials */
+
                                                             /* footer */
 
                                                             /* media */
@@ -95,7 +100,7 @@ margin-bottom: 30px;
 
   /* media tablet*/
   /* header */
-  @media screen and (min-width:375px) {
+@media screen and (min-width:375px) {
    /* main */
     /* setion store */
     .store .container.d-flex{
@@ -120,12 +125,12 @@ margin-bottom: 30px;
     .store .container .card.app{
       height: 550px;
       width: 65%;
-    }
-    /* /setion store */
-  }
+    }   /* /section store */
+
+}
   /* footer */
   /* media Desktop*/
-  /* setion store */
+  /* section store */
 @media screen and (min-width:769px){
   header .container.d-flex .menu {
     display: block;
