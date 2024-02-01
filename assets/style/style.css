@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+header {
+  height: 80px;
+}
+
+/* utility */
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.debug {
+  border: 1px solid black;
+  background-color: #0084FD;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-relative {
+  position: relative;
+}
+
+/* header */
+header .container.d-flex {
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+/* main */
+
+
+
+/* footer */
