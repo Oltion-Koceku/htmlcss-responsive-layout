@@ -25,6 +25,7 @@ header {
   border: 1px solid black;
   background-color: #0084FD;
 }
+
 .debug-r {
   border: 1px solid black;
   background-color: #9bc724;
@@ -32,14 +33,14 @@ header {
 
 .d-flex {
   display: flex;
-  
+
 }
 
 .p-relative {
   position: relative;
 }
 
-                                                  /* header */
+/* header */
 header .container.d-flex {
   justify-content: space-between;
   height: 100%;
@@ -50,39 +51,46 @@ header .container.d-flex .menu {
   display: none;
 }
 
-                                                    /* main */
+/* main */
 /* store */
-.store{
-padding-bottom: 50px;
-}
-.store .container{
-flex-direction: column;
-}
-.store .container .card{
-width: 100%;
-height: 350px; /*debug*/
-margin-top: 25px;
+.store {
+  padding-bottom: 50px;
 }
 
-.store .container .card.app{
-margin-top: 50px;
-height: 600px;
+.store .container {
+  flex-direction: column;
 }
+
+.store .container .card {
+  width: 100%;
+  height: 350px;
+  /*debug*/
+  margin-top: 25px;
+}
+
+.store .container .card.app {
+  margin-top: 50px;
+  height: 600px;
+}
+
 /* /store */
 /* strategic */
-.strategic{
-padding-top: 50px;
-padding-bottom: 50px;
+.strategic {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.strategic .container.d-flex{
-flex-direction: column;
+
+.strategic .container.d-flex {
+  flex-direction: column;
 }
-.strategic .container.d-flex .planning{
-width: 100%;
-height: 600px;
-margin-bottom: 30px;
+
+.strategic .container.d-flex .planning {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 30px;
 }
-.strategic .container.d-flex .development{
+
+.strategic .container.d-flex .development {
   width: 100%;
   height: 600px;
 }
@@ -90,97 +98,315 @@ margin-bottom: 30px;
 /* /strategic */
 
 /* tesimonials */
-.testimonials .container.d-flex
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.testimonials .container.d-flex {
+  flex-direction: column;
+}
+
+.text-box {
+  width: 100%;
+  height: 200px;
+}
+
+.card.testimonial.debug {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+
 /* /tesimonials */
+/* benefits */
+.benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-                                                            /* footer */
+.benefits .container {
+  flex-direction: column;
+}
 
-                                                            /* media */
-
-
-  /* media tablet*/
-  /* header */
-@media screen and (min-width:375px) {
-   /* main */
-    /* setion store */
-    .store .container.d-flex{
-      flex-wrap: wrap;
-      flex-direction: row;
-    }
-    .store .container .card{
-      width: 30.6%;
-      height: 450px; /*debug*/
-      margin-top: 4%;
-      margin-right: 4%;
-    }
-
-    .store .container .card:nth-child(2){
-      margin-top: 50px;
-      height: 550px;
-      margin-right: 0;
-    }
-    .store .container .card:nth-child(5){
-      margin-right: 0;
-    }
-    .store .container .card.app{
-      height: 550px;
-      width: 65%;
-    }   /* /section store */
+.benefits .container .title {
+  width: 100%;
+  height: 100px;
 
 }
-  /* footer */
-  /* media Desktop*/
-  /* section store */
-@media screen and (min-width:769px){
-  header .container.d-flex .menu {
-    display: block;
-  }
-  header .container.d-flex .hamburger {
-    display: none;
-  }
-  .store .container.d-flex{
+
+.benefits .container .card.more {
+  width: 100%;
+  height: 400px;
+  margin-top: 70px;
+}
+
+
+/* /benefits */
+
+/* about */
+.about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about .container {
+  flex-direction: column;
+}
+
+.about .container .us {
+  width: 100%;
+  height: 950px;
+  margin-bottom: 50px;
+}
+
+.about .container .help {
+  width: 100%;
+  height: 400px;
+
+}
+
+/* /about */
+
+/* started */
+.started {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.started .container .free {
+  width: 100%;
+  height: 500px;
+}
+
+/* /started */
+/* footer */
+
+
+footer .container .lorem {
+  width: 100%;
+  height: 230px;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+  /* main */
+  /* setion store */
+  .store .container.d-flex {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .store .container .card{
+
+  .store .container .card {
     width: 30.6%;
-    height: 400px; /*debug*/
+    height: 450px;
+    /*debug*/
     margin-top: 4%;
     margin-right: 4%;
   }
 
-  .store .container .card:nth-child(2){
+  .store .container .card:nth-child(2) {
     margin-top: 50px;
-    margin-right: 0;
-    height: 400px;
-  }
-  .store .container .card:nth-child(5){
+    height: 550px;
     margin-right: 0;
   }
-  .store .container .card.app{
+
+  .store .container .card:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .store .container .card.app {
+    height: 550px;
     width: 65%;
+  }
+
+  /* /section store */
+  /* benefits */
+  .benefits .container.d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .benefits .container .title {
+    width: 100%;
+    height: 100px;
+
+  }
+
+  .benefits .container .card.more {
+    width: calc(100% / 2 - 2%);
     height: 400px;
-  }
-  /* /setion store */
-  /* strategic */
-  .strategic .container.d-flex{
-  width: 769px;
-  flex-direction: row;
-
+    margin-right: 3%;
   }
 
-  .strategic .container.d-flex .planning{
-  width: 50%;
-  height: 700px;
-  margin-right: 10%;
+  .benefits .container .card.more:nth-child(3){
+    margin-right: 0;
+  
   }
-  .strategic .container.d-flex .development{
-  width: 40%;
-  height: 550px;
-  margin-top: 150px;
+  .benefits .container .card.more:nth-child(5){
+    margin-right: 0;
+  
   }
-  /* /strategic */
+  .benefits .container .card.more:nth-child(7){
+    margin-right: 0;
+  }
 
+  /* /benefits */
+  /* about */
+  .about .container.d-flex {
+    flex-direction: row;
+    width: 90%;
+  }
 
+  .about .container .us {
+    width: 70%;
+    height: 800px;
+    margin-right: 10%;
+  }
 
-}
+  .about .container .help {
+    width: 20%;
+    height: 500px;
+
+  }
+
+  /* /about */
+  /* started */
+
+  .started .container .free {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  /* /started */
+  /* footer */
+  footer .container .lorem {
+    width: 70%;
+    height: 230px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width:1200px) {
+
+    /* section store */
+    header .container.d-flex .menu {
+      display: block;
+    }
+
+    header .container.d-flex .hamburger {
+      display: none;
+    }
+
+    .store .container.d-flex {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .store .container .card {
+      width: 30.6%;
+      height: 400px;
+      /*debug*/
+      margin-top: 4%;
+      margin-right: 4%;
+    }
+
+    .store .container .card:nth-child(2) {
+      margin-top: 50px;
+      margin-right: 0;
+      height: 400px;
+    }
+
+    .store .container .card:nth-child(5) {
+      margin-right: 0;
+    }
+
+    .store .container .card.app {
+      width: 65%;
+      height: 400px;
+    }
+
+    /* /setion store */
+    /* strategic */
+    .strategic .container.d-flex {
+      width: 768px;
+      flex-direction: row;
+
+    }
+
+    .strategic .container.d-flex .planning {
+      width: 50%;
+      height: 700px;
+      margin-right: 10%;
+    }
+
+    .strategic .container.d-flex .development {
+      width: 40%;
+      height: 550px;
+      margin-top: 150px;
+    }
+
+    /* /strategic */
+    /* benefits */
+    .benefits .container.d-flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    .benefits .container .title {
+      width: 100%;
+      height: 100px;
+
+    }
+
+    .benefits .container .card.more.debug-r {
+      width: calc(100% / 3 - 2%);
+      height: 400px;
+      margin-right: 3%;
+    }
+
+    main .benefits .container .card.more:nth-child(4),
+    main .benefits .container .card.more:nth-child(7) {
+      margin-right: 0; 
+    }
+
+    /* /benefits */
+    /* about */
+    .about .container.d-flex {
+      flex-direction: row;
+      width: 1000px;
+    }
+
+    .about .container .us {
+      width: 70%;
+      height: 650px;
+      margin-right: 10%;
+    }
+
+    .about .container .help {
+      width: 20%;
+      height: 500px;
+
+    }
+
+    /* /about */
+    /* started */
+
+    .started .container .free {
+      width: 50%;
+      height: 500px;
+      margin: 0 auto;
+    }
+
+    /* /started */
+    /* footer */
+    footer .container .lorem {
+      width: 40%;
+      height: 230px;
+      margin: 0 auto;
+    }
+  }
