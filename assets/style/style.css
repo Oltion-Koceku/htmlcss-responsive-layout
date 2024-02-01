@@ -25,6 +25,10 @@ header {
   border: 1px solid black;
   background-color: #0084FD;
 }
+.debug-r {
+  border: 1px solid black;
+  background-color: #9bc724;
+}
 
 .d-flex {
   display: flex;
@@ -34,7 +38,7 @@ header {
   position: relative;
 }
 
-/* header */
+                                                  /* header */
 header .container.d-flex {
   justify-content: space-between;
   height: 100%;
@@ -45,8 +49,11 @@ header .container.d-flex .menu {
   display: none;
 }
 
-/* main */
+                                                    /* main */
 /* store */
+.store{
+padding-bottom: 50px;
+}
 .store .container{
 flex-direction: column;
 }
@@ -61,47 +68,114 @@ margin-top: 50px;
 height: 600px;
 }
 /* /store */
+/* strategic */
+.strategic{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.strategic .container.d-flex{
+flex-direction: column;
+}
+.strategic .container.d-flex .planning{
+width: 100%;
+height: 600px;
+margin-bottom: 30px;
+}
+.strategic .container.d-flex .development{
+  width: 100%;
+  height: 600px;
+}
+
+/* /strategic */
+
+                                                            /* footer */
+
+                                                            /* media */
 
 
-/* footer */
+  /* media tablet*/
+  /* header */
+  @media screen and (min-width:375px) {
+   /* main */
+    /* setion store */
+    .store .container.d-flex{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .store .container .card{
+      width: 30.6%;
+      height: 450px; /*debug*/
+      margin-top: 4%;
+      margin-right: 4%;
+    }
 
-/* media mobile */
-  /* main */
-/* setion store */
-/* /setion store */
+    .store .container .card:nth-child(2){
+      margin-top: 50px;
+      height: 550px;
+      margin-right: 0;
+    }
+    .store .container .card:nth-child(5){
+      margin-right: 0;
+    }
+    .store .container .card.app{
+      height: 550px;
+      width: 65%;
+    }
+    /* /setion store */
+  }
   /* footer */
-
-
-/* media tablet*/
-/* header */
-@media screen and (min-width:375px) {
-  /* main */
+  /* media Desktop*/
+  /* setion store */
+@media screen and (min-width:769px){
+  header .container.d-flex .menu {
+    display: block;
+  }
+  header .container.d-flex .hamburger {
+    display: none;
+  }
   .store .container.d-flex{
     flex-wrap: wrap;
     flex-direction: row;
   }
   .store .container .card{
     width: 30.6%;
-    height: 450px; /*debug*/
+    height: 400px; /*debug*/
     margin-top: 4%;
     margin-right: 4%;
   }
 
   .store .container .card:nth-child(2){
-  margin-top: 50px;
-  height: 550px;
-  margin-right: 0;
+    margin-top: 50px;
+    margin-right: 0;
+    height: 400px;
   }
   .store .container .card:nth-child(5){
-  margin-right: 0;
+    margin-right: 0;
   }
   .store .container .card.app{
-    height: 550px;
     width: 65%;
+    height: 400px;
   }
+  /* /setion store */
+  /* strategic */
+  .strategic .container.d-flex{
+  width: 769px;
+  flex-direction: row;
+
+  }
+
+  .strategic .container.d-flex .planning{
+  width: 50%;
+  height: 700px;
+  margin-right: 10%;
+  }
+  .strategic .container.d-flex .development{
+  width: 40%;
+  height: 550px;
+  margin-top: 150px;
+  }
+  /* /strategic */
+
+
+
 }
-/* footer */
-/* media Desktop*/
-/* header */
-/* main */
-/* footer */
