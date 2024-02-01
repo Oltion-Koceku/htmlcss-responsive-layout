@@ -40,8 +40,25 @@ header .container.d-flex {
   align-items: center;
 }
 
+header .container.d-flex .hamburger{
+display: none;
+}
+
 /* main */
 
 
 
 /* footer */
+
+/* media mobile */
+@media screen and (max-width:480px) {
+  header .container.d-flex .hamburger{
+  display: block;
+  }
+  header .container.d-flex .menu{
+  display: none;
+
+  }
+}
+/* media tablet*/
+/* media Desktop*/
