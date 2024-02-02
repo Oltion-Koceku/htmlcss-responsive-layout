@@ -172,15 +172,38 @@ header .container.d-flex .menu .button a {
 
 .strategic .container.d-flex .planning {
   width: 100%;
-  height: 600px;
   margin-bottom: 30px;
+  padding: 20px 0;
+  color: white;
 }
-
+.strategic .container.d-flex .planning img{
+width: 99%;
+}
+.strategic .container.d-flex .planning h2{
+padding-bottom: 20px;
+padding-top: 20px;
+}
 .strategic .container.d-flex .development {
+  background-color: white;
   width: 100%;
-  height: 600px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+.strategic .container.d-flex .development div:first-child{
+  height: 50%;
 }
 
+.strategic .container.d-flex .development div img{
+  width: 100%;
+}
+.strategic .container.d-flex .development h2{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  }
+.strategic .container.d-flex .development div p{
+  text-align: center;
+  }
 /* /strategic */
 
 /* tesimonials */
