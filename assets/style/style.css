@@ -251,13 +251,27 @@ color: var(--strategic);
   width: 100%;
   margin-top: 50px;
   background-color: var(--strategic);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .card.testimonial.debug div{
   width: 50%;
 }
+.card.testimonial.debug h4{
+padding-bottom: 20px;
+}
+.card.testimonial.debug p{
+padding: 0 30px;
+text-align: center;
+}
 .card.testimonial.debug div img{
   border-radius: 50%;
-  width: 100%;
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 200px;
 }
 /* /tesimonials */
 /* benefits */
