@@ -21,13 +21,14 @@ header {
   background-color: var(--top-bar);
 }
 
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-h3{
-padding: 35px 0;
+h3 {
+  padding: 35px 0;
 }
+
 /* utility */
 .container {
   margin: 0 auto;
@@ -59,8 +60,9 @@ padding: 35px 0;
   border-radius: 20px;
   background-color: var(--strategic);
 }
-.card{
-border-radius: 25px;
+
+.card {
+  border-radius: 25px;
 }
 
 /* header */
@@ -72,20 +74,22 @@ header .container.d-flex {
 
 header .container.d-flex .menu {
   display: none;
-  
+
 }
+
 header .container.d-flex .menu a,
-.hamburger
- {
+.hamburger {
   color: white;
-  
+
 }
+
 header .container.d-flex .menu .button {
-background-color: white;
-color: black;
+  background-color: white;
+  color: black;
 }
-header .container.d-flex .menu .button a{
-color: black;
+
+header .container.d-flex .menu .button a {
+  color: black;
 }
 
 /* main */
@@ -100,25 +104,27 @@ color: black;
 
 .store .container .card {
   width: 100%;
-  
+
   /*debug*/
   margin-top: 25px;
   background-color: var(--sore);
-  
+
 }
 
 .store .container .card.app {
   margin-top: 50px;
 }
-.store .container .card h3{
+
+.store .container .card h3 {
   color: var(--top-bar);
 }
 
-.store .container .card.app div{
+.store .container .card.app div {
   width: 90%;
   margin: 0 auto;
 }
-.store .container .card.app .button{
+
+.store .container .card.app .button {
   margin-top: 35px;
   margin-bottom: 35px;
   text-align: center;
@@ -126,24 +132,27 @@ color: black;
   margin-left: 0;
 }
 
-.store .container .card.app img{
-width: 100%;
+.store .container .card.app img {
+  width: 100%;
 }
-.store .container .card.icon{
-padding-top: 40px;
-padding-bottom: 40px;
+
+.store .container .card.icon {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.store .container .card.icon div{
-justify-content: center;
-align-items: center;
+
+.store .container .card.icon div {
+  justify-content: center;
+  align-items: center;
 }
-.store .container .card.icon div p{
+
+.store .container .card.icon div p {
   text-align: center;
 }
 
-.store .container .card.icon div i{
-font-size: 90px;
-color: var(--top-bar);
+.store .container .card.icon div i {
+  font-size: 90px;
+  color: var(--top-bar);
 }
 
 
@@ -299,13 +308,16 @@ footer .container .lorem {
   .store .container .card.app {
     width: 65%;
   }
-  .store .container .card.app img{
-  width: 210px;
+
+  .store .container .card.app img {
+    width: 210px;
   }
-  .store .container .card.icon div:last-child{
-  width: 70%;
-  margin: 0 auto;
+
+  .store .container .card.icon div:last-child {
+    width: 70%;
+    margin: 0 auto;
   }
+
   /* /section store */
   /* benefits */
   .benefits .container.d-flex {
@@ -413,19 +425,26 @@ footer .container .lorem {
 
     .store .container .card.app {
       width: 65%;
-      
+
     }
 
-    .store .container .card.app div:first-child{
-    width: 300px;
-    margin-left: 40px;
+    .store .container .card.app div:first-child {
+      width: 300px;
+      margin-left: 40px;
     }
-    .store .container .card.app img{
-        width: 261px;
-        right: 10%;
-        position: absolute;
-        top: 20%;
-      }
+
+    .store .container .card.app img {
+      width: 247px;
+      right: 10%;
+      position: absolute;
+      top: 20%;
+    }
+
+    .store .container .card.icon div:last-child {
+      width: 100%;
+      margin: 0 auto;
+    }
+
     /* /setion store */
     /* strategic */
     .strategic .container.d-flex {
