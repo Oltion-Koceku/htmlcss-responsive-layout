@@ -188,6 +188,8 @@ padding-top: 20px;
   width: 100%;
   margin-bottom: 30px;
   padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
 }
 .strategic .container.d-flex .development div:first-child{
   height: 50%;
@@ -202,7 +204,19 @@ padding-top: 20px;
   padding-top: 20px;
   }
 .strategic .container.d-flex .development div p{
+  font-style: italic;
   text-align: center;
+  }
+  .strategic .container.d-flex .development .button-due{
+  border-radius: 50%;
+  background-color: var(--strategic);
+  width: 40px;
+  margin-top: 20px;
+  }
+  .strategic .container.d-flex .development .button-due i{
+  font-size: 20px;
+  text-align: center;
+  padding: 11px;
   }
 /* /strategic */
 
@@ -478,14 +492,15 @@ footer .container .lorem {
 
     .strategic .container.d-flex .planning {
       width: 50%;
-      height: 700px;
       margin-right: 10%;
     }
-
+    .strategic .container.d-flex .planning img{
+    margin-bottom: 150px;
+    }
     .strategic .container.d-flex .development {
       width: 40%;
-      height: 550px;
       margin-top: 150px;
+      padding: 0 20px;
     }
 
     /* /strategic */
