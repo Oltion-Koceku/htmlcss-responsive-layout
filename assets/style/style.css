@@ -176,13 +176,16 @@ header .container.d-flex .menu .button a {
   padding: 20px 0;
   color: white;
 }
-.strategic .container.d-flex .planning img{
-width: 99%;
+
+.strategic .container.d-flex .planning img {
+  width: 99%;
 }
-.strategic .container.d-flex .planning h2{
-padding-bottom: 20px;
-padding-top: 20px;
+
+.strategic .container.d-flex .planning h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
+
 .strategic .container.d-flex .development {
   background-color: white;
   width: 100%;
@@ -191,33 +194,39 @@ padding-top: 20px;
   flex-direction: column;
   align-items: center;
 }
-.strategic .container.d-flex .development div:first-child{
+
+.strategic .container.d-flex .development div:first-child {
   height: 50%;
 }
 
-.strategic .container.d-flex .development div img{
+.strategic .container.d-flex .development div img {
   width: 100%;
 }
-.strategic .container.d-flex .development h2{
+
+.strategic .container.d-flex .development h2 {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
-  }
-.strategic .container.d-flex .development div p{
+}
+
+.strategic .container.d-flex .development div p {
   font-style: italic;
   text-align: center;
-  }
-  .strategic .container.d-flex .development .button-due{
+}
+
+.strategic .container.d-flex .development .button-due {
   border-radius: 50%;
   background-color: var(--strategic);
   width: 40px;
   margin-top: 20px;
-  }
-  .strategic .container.d-flex .development .button-due i{
+}
+
+.strategic .container.d-flex .development .button-due i {
   font-size: 20px;
   text-align: center;
   padding: 11px;
-  }
+}
+
 /* /strategic */
 
 /* tesimonials */
@@ -237,16 +246,21 @@ padding-top: 20px;
   justify-content: center;
   align-items: center;
 }
-.text-box p{
-text-align: center;
+
+.text-box p {
+  text-align: center;
 }
 
-.text-box h4, h2, p{
-margin-bottom: 30px;
+.text-box h4,
+h2,
+p {
+  margin-bottom: 30px;
 }
-.text-box h2{
-color: var(--strategic);
+
+.text-box h2 {
+  color: var(--strategic);
 }
+
 .card.testimonial.debug {
   width: 100%;
   margin-top: 50px;
@@ -256,23 +270,24 @@ color: var(--strategic);
   align-items: center;
   color: white;
 }
-.card.testimonial.debug div{
-  width: 50%;
+
+.card.testimonial.debug h4 {
+  padding-bottom: 20px;
 }
-.card.testimonial.debug h4{
-padding-bottom: 20px;
+
+.card.testimonial.debug p {
+  padding: 0 30px;
+  text-align: center;
 }
-.card.testimonial.debug p{
-padding: 0 30px;
-text-align: center;
-}
-.card.testimonial.debug div img{
+
+.card.testimonial.debug div img {
   border-radius: 50%;
   width: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 200px;
+  height: 230px;
 }
+
 /* /tesimonials */
 /* benefits */
 .benefits {
@@ -281,23 +296,46 @@ text-align: center;
   padding-bottom: 50px;
 }
 
-.benefits .container {
+.benefits .container.d-flex {
   flex-direction: column;
 }
 
 .benefits .container .title {
-  width: 100%;
-  height: 100px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.benefits .container .title h2 {
+  font-size: 30px;
+  color: white;
 }
 
 .benefits .container .card.more {
   width: 100%;
-  height: 400px;
   margin-top: 70px;
+  padding: 0 30px;
+  background-color: white;
 }
-
-
+.benefits .container .card.more h3{
+font-size: 50px;
+color: var(--strategic);
+}
+.benefits .container .card.more h4{
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: var(--strategic);
+}
+.benefits .container .card.more .button{
+width: 210px;
+margin-bottom: 30px;
+text-align: center;
+}
+.benefits .container .card.more .button a{
+color: white;
+}
 /* /benefits */
 
 /* about */
@@ -312,16 +350,31 @@ text-align: center;
 
 .about .container .us {
   width: 100%;
-  height: 950px;
   margin-bottom: 50px;
+  padding: 0 30px;
 }
 
 .about .container .help {
   width: 100%;
-  height: 400px;
-
+  flex-direction: column;
 }
-
+.about .container .help div img{
+  width: 200px;
+  height: 220px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.about .container .help .button{
+width: 220px;
+margin-bottom: 20px;
+}
+.about .container .help div:nth-child(2) i{
+position: absolute;
+left: 40%;
+color: var(--strategic);
+font-size: 60px;
+top:0;
+}
 /* /about */
 
 /* started */
@@ -387,19 +440,30 @@ footer .container .lorem {
   }
 
   /* /section store */
+  /* testimonials */
+  .card.testimonial.debug {
+    flex-direction: row;
+    padding: 0 20px;
+  }
+
+  .card.testimonial.debug h4 {
+    padding-bottom: 20px;
+    padding-left: 30px;
+  
+  }
+
+  .card.testimonial.debug p {
+    text-align: initial;
+  }
+
+  /* /testimonials */
   /* benefits */
   .benefits .container.d-flex {
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
 
   }
-
-  .benefits .container .title {
-    width: 100%;
-    height: 100px;
-
-  }
-
+  
   .benefits .container .card.more {
     width: calc(100% / 2 - 2%);
     height: 400px;
@@ -428,17 +492,27 @@ footer .container .lorem {
   }
 
   .about .container .us {
-    width: 70%;
-    height: 800px;
+    width: 50%;
     margin-right: 10%;
   }
 
   .about .container .help {
-    width: 20%;
-    height: 500px;
+    width: 31%;
+    margin-left: 100px;
+    align-items: center;
 
   }
+  .about .container .help div:nth-child(2) i{
+    left: 69%;
+    }
+  .about .container .help div img{
+    width: 130px;
+    height: 150px;
+    }
 
+  .about .container .us h2{
+  font-size: 50px;
+  }
   /* /about */
   /* started */
 
@@ -455,143 +529,149 @@ footer .container .lorem {
     height: 230px;
     margin: 0 auto;
   }
+}
 
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
 
-    /* section store */
-    header .container.d-flex .menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 50%;
-    }
-
-    header .container.d-flex .hamburger {
-      display: none;
-    }
-
-    .store .container.d-flex {
-      flex-wrap: wrap;
-      flex-direction: row;
-    }
-
-    .store .container .card {
-      width: 30.6%;
-      /*debug*/
-      margin-top: 4%;
-      margin-right: 4%;
-    }
-
-    .store .container .card:nth-child(2) {
-      margin-top: 50px;
-      margin-right: 0;
-    }
-
-    .store .container .card:nth-child(5) {
-      margin-right: 0;
-    }
-
-    .store .container .card.app {
-      width: 65%;
-
-    }
-
-    .store .container .card.app div:first-child {
-      width: 300px;
-      margin-left: 40px;
-    }
-
-    .store .container .card.app img {
-      width: 247px;
-      right: 10%;
-      position: absolute;
-      top: 20%;
-    }
-
-    .store .container .card.icon div:last-child {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    /* /setion store */
-    /* strategic */
-    .strategic .container.d-flex {
-      width: 768px;
-      flex-direction: row;
-
-    }
-
-    .strategic .container.d-flex .planning {
-      width: 50%;
-      margin-right: 10%;
-    }
-    .strategic .container.d-flex .planning img{
-    margin-bottom: 150px;
-    }
-    .strategic .container.d-flex .development {
-      width: 40%;
-      margin-top: 150px;
-      padding: 0 20px;
-    }
-
-    /* /strategic */
-    /* benefits */
-    .benefits .container.d-flex {
-      flex-direction: row;
-      flex-wrap: wrap;
-
-    }
-
-    .benefits .container .title {
-      width: 100%;
-      height: 100px;
-
-    }
-
-    .benefits .container .card.more.debug-r {
-      width: calc(100% / 3 - 2%);
-      height: 400px;
-      margin-right: 3%;
-    }
-
-    main .benefits .container .card.more:nth-child(4),
-    main .benefits .container .card.more:nth-child(7) {
-      margin-right: 0;
-    }
-
-    /* /benefits */
-    /* about */
-    .about .container.d-flex {
-      flex-direction: row;
-      width: 1000px;
-    }
-
-    .about .container .us {
-      width: 70%;
-      height: 650px;
-      margin-right: 10%;
-    }
-
-    .about .container .help {
-      width: 20%;
-      height: 500px;
-
-    }
-
-    /* /about */
-    /* started */
-
-    .started .container .free {
-      width: 50%;
-      height: 500px;
-      margin: 0 auto;
-    }
-
-    /* /started */
-    /* footer */
-    footer .container .lorem {
-      width: 40%;
-      height: 230px;
-      margin: 0 auto;
-    }
+  /* section store */
+  header .container.d-flex .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
   }
+
+  header .container.d-flex .hamburger {
+    display: none;
+  }
+
+  .store .container.d-flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .store .container .card {
+    width: 30.6%;
+    /*debug*/
+    margin-top: 4%;
+    margin-right: 4%;
+  }
+
+  .store .container .card:nth-child(2) {
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .store .container .card:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .store .container .card.app {
+    width: 65%;
+
+  }
+
+  .store .container .card.app div:first-child {
+    width: 300px;
+    margin-left: 40px;
+  }
+
+  .store .container .card.app img {
+    width: 247px;
+    right: 10%;
+    position: absolute;
+    top: 20%;
+  }
+
+  .store .container .card.icon div:last-child {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* /setion store */
+  /* strategic */
+  .strategic .container.d-flex {
+    width: 768px;
+    flex-direction: row;
+
+  }
+
+  .strategic .container.d-flex .planning {
+    width: 50%;
+    margin-right: 10%;
+  }
+
+  .strategic .container.d-flex .planning img {
+    margin-bottom: 150px;
+  }
+
+  .strategic .container.d-flex .development {
+    width: 40%;
+    margin-top: 150px;
+    padding: 0 20px;
+  }
+
+  /* /strategic */
+  /* benefits */
+  .benefits .container.d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .benefits .container .title {
+    width: 100%;
+    height: 100px;
+
+  }
+
+  .benefits .container .card.more.debug-r {
+    width: calc(100% / 3 - 2%);
+    height: 400px;
+    margin-right: 3%;
+  }
+
+  main .benefits .container .card.more:nth-child(4),
+  main .benefits .container .card.more:nth-child(7) {
+    margin-right: 0;
+  }
+
+  /* /benefits */
+  /* about */
+  .about .container.d-flex {
+    flex-direction: row;
+    width: 1000px;
+  }
+
+  .about .container .us {
+    width: 70%;
+    height: 650px;
+    margin-right: 10%;
+  }
+  .about .container .us p{
+  font-size: 20px;
+  }
+
+  .about .container .help {
+    width: 23%;
+    height: 500px;
+
+  }
+
+  /* /about */
+  /* started */
+
+  .started .container .free {
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  /* /started */
+  /* footer */
+  footer .container .lorem {
+    width: 40%;
+    height: 230px;
+    margin: 0 auto;
+  }
+}
