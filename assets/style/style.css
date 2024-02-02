@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-:root {}
+:root {
+  --top-bar: #0084fd;
+  --sore: #b5ddff;
+  --strategic: #9792e4;
+  --free: #fdc15f;
+  --footer: #333333;
+}
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -12,8 +18,12 @@ body {
 
 header {
   height: 80px;
+  background-color: var(--top-bar);
 }
 
+a{
+text-decoration: none;
+}
 /* utility */
 .container {
   margin: 0 auto;
@@ -40,6 +50,15 @@ header {
   position: relative;
 }
 
+.button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: var(--strategic);
+}
+.card{
+border-radius: 25px;
+}
+
 /* header */
 header .container.d-flex {
   justify-content: space-between;
@@ -49,6 +68,19 @@ header .container.d-flex {
 
 header .container.d-flex .menu {
   display: none;
+  
+}
+header .container.d-flex .menu a,
+.hamburger {
+  color: white;
+  
+}
+header .container.d-flex .menu .button {
+background-color: white;
+color: black;
+}
+header .container.d-flex .menu .button a{
+color: black;
 }
 
 /* main */
@@ -66,6 +98,8 @@ header .container.d-flex .menu {
   height: 350px;
   /*debug*/
   margin-top: 25px;
+  background-color: var(--sore);
+  
 }
 
 .store .container .card.app {
@@ -78,6 +112,7 @@ header .container.d-flex .menu {
 .strategic {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: var(--strategic);
 }
 
 .strategic .container.d-flex {
@@ -116,11 +151,13 @@ header .container.d-flex .menu {
   width: 100%;
   height: 300px;
   margin-top: 50px;
+  background-color: var(--strategic);
 }
 
 /* /tesimonials */
 /* benefits */
 .benefits {
+  background-color: var(--strategic);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -172,6 +209,7 @@ header .container.d-flex .menu {
 .started {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: var(--strategic);
 }
 
 .started .container .free {
@@ -181,7 +219,9 @@ header .container.d-flex .menu {
 
 /* /started */
 /* footer */
-
+footer {
+  background-color: var(--footer);
+}
 
 footer .container .lorem {
   width: 100%;
@@ -242,15 +282,17 @@ footer .container .lorem {
     margin-right: 3%;
   }
 
-  .benefits .container .card.more:nth-child(3){
+  .benefits .container .card.more:nth-child(3) {
     margin-right: 0;
-  
+
   }
-  .benefits .container .card.more:nth-child(5){
+
+  .benefits .container .card.more:nth-child(5) {
     margin-right: 0;
-  
+
   }
-  .benefits .container .card.more:nth-child(7){
+
+  .benefits .container .card.more:nth-child(7) {
     margin-right: 0;
   }
 
@@ -294,7 +336,10 @@ footer .container .lorem {
 
     /* section store */
     header .container.d-flex .menu {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
     }
 
     header .container.d-flex .hamburger {
@@ -371,7 +416,7 @@ footer .container .lorem {
 
     main .benefits .container .card.more:nth-child(4),
     main .benefits .container .card.more:nth-child(7) {
-      margin-right: 0; 
+      margin-right: 0;
     }
 
     /* /benefits */
