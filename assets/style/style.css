@@ -353,6 +353,9 @@ color: white;
   margin-bottom: 50px;
   padding: 0 30px;
 }
+.about .container h2{
+color: var(--strategic);
+}
 
 .about .container .help {
   width: 100%;
@@ -367,6 +370,9 @@ color: white;
 .about .container .help .button{
 width: 220px;
 margin-bottom: 20px;
+}
+.about .container .help .button a{
+color: white;
 }
 .about .container .help div:nth-child(2) i{
 position: absolute;
