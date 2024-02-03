@@ -19,6 +19,13 @@ body {
 header {
   height: 80px;
   background-color: var(--top-bar);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+main{
+padding-top: 80px;
 }
 
 a {
