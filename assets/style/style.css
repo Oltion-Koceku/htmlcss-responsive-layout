@@ -24,8 +24,8 @@ header {
   z-index: 999;
 }
 
-main{
-padding-top: 80px;
+main {
+  padding-top: 80px;
 }
 
 a {
@@ -136,7 +136,12 @@ header .container.d-flex .menu .button a {
   margin-bottom: 35px;
   text-align: center;
   width: 210px;
+  background-color: var(--top-bar);
   margin-left: 0;
+}
+
+.store .container .card.app .button a {
+  color: white;
 }
 
 .store .container .card.app img {
@@ -293,6 +298,7 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 230px;
+  object-fit: cover;
 }
 
 /* /tesimonials */
@@ -326,23 +332,28 @@ p {
   padding: 0 30px;
   background-color: white;
 }
-.benefits .container .card.more h3{
-font-size: 50px;
-color: var(--strategic);
+
+.benefits .container .card.more h3 {
+  font-size: 50px;
+  color: var(--strategic);
 }
-.benefits .container .card.more h4{
+
+.benefits .container .card.more h4 {
   font-size: 20px;
   padding-bottom: 30px;
   color: var(--strategic);
 }
-.benefits .container .card.more .button{
-width: 210px;
-margin-bottom: 30px;
-text-align: center;
+
+.benefits .container .card.more .button {
+  width: 210px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.benefits .container .card.more .button a{
-color: white;
+
+.benefits .container .card.more .button a {
+  color: white;
 }
+
 /* /benefits */
 
 /* about */
@@ -360,34 +371,41 @@ color: white;
   margin-bottom: 50px;
   padding: 0 30px;
 }
-.about .container h2{
-color: var(--strategic);
+
+.about .container h2 {
+  color: var(--strategic);
 }
 
 .about .container .help {
   width: 100%;
   flex-direction: column;
 }
-.about .container .help div img{
-  width: 200px;
+
+.about .container .help div img {
+  width: 220px;
   height: 220px;
   border-radius: 50%;
   margin-top: 20px;
+  object-fit: cover;
 }
-.about .container .help .button{
-width: 220px;
-margin-bottom: 20px;
+
+.about .container .help .button {
+  width: 220px;
+  margin-bottom: 20px;
 }
-.about .container .help .button a{
-color: white;
+
+.about .container .help .button a {
+  color: white;
 }
-.about .container .help div:nth-child(2) i{
-position: absolute;
-left: 40%;
-color: var(--strategic);
-font-size: 60px;
-top:0;
+
+.about .container .help div:nth-child(2) i {
+  position: absolute;
+  left: 40%;
+  color: var(--strategic);
+  font-size: 60px;
+  top: 0;
 }
+
 /* /about */
 
 /* started */
@@ -404,44 +422,52 @@ top:0;
   align-items: center;
   color: white;
 }
-.started .container .free .button{
-background-color: white;
-padding: 20px 10px;
-border-radius: 90px;
-width: 50%;
-text-align: center;
-margin-bottom: 20px;
+
+.started .container .free .button {
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 90px;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
 
 }
-.started .container .free .button a{
+
+.started .container .free .button a {
   color: black;
 }
-.started .container .free p{
-text-align: center;
+
+.started .container .free p {
+  text-align: center;
 }
 
-.started .container .free h4{
-color: gray;
-padding-top: 20px;
-font-size: 20px;
+.started .container .free h4 {
+  color: gray;
+  padding-top: 20px;
+  font-size: 20px;
 }
-.started .container .free h3{
+
+.started .container .free h3 {
   font-size: 34px;
   text-align: center;
 }
-.started .container .free h2{
-font-size: 70px;
-color: var(--free);
+
+.started .container .free h2 {
+  font-size: 70px;
+  color: var(--free);
 }
-.started .container .free span{
-padding-bottom: 20px;
-font-size: 18px;
-text-align: center;
+
+.started .container .free span {
+  padding-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
 }
-.started .container .free span a{
-color: white;
-text-decoration: underline;
+
+.started .container .free span a {
+  color: white;
+  text-decoration: underline;
 }
+
 /* /started */
 /* footer */
 footer {
@@ -452,20 +478,23 @@ footer {
 footer .container .lorem {
   width: 100%;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-footer .container .lorem p{
-font-size: 21px;
-color: white;
+
+footer .container .lorem p {
+  font-size: 21px;
+  color: white;
 
 }
-footer .container .lorem p a{
-color: #9792e4;
-text-decoration: underline;
+
+footer .container .lorem p a {
+  color: #9792e4;
+  text-decoration: underline;
 }
-footer .container .lorem p:first-child{
-padding-bottom: 20px;
+
+footer .container .lorem p:first-child {
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -515,7 +544,7 @@ padding-bottom: 20px;
   .card.testimonial.debug h4 {
     padding-bottom: 20px;
     padding-left: 30px;
-  
+
   }
 
   .card.testimonial.debug p {
@@ -529,7 +558,7 @@ padding-bottom: 20px;
     flex-direction: row;
 
   }
-  
+
   .benefits .container .card.more {
     width: calc(100% / 2 - 2%);
     height: 400px;
@@ -568,17 +597,20 @@ padding-bottom: 20px;
     align-items: center;
 
   }
-  .about .container .help div:nth-child(2) i{
-    left: 69%;
-    }
-  .about .container .help div img{
-    width: 130px;
-    height: 150px;
-    }
 
-  .about .container .us h2{
-  font-size: 50px;
+  .about .container .help div:nth-child(2) i {
+    left: 69%;
   }
+
+  .about .container .help div img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about .container .us h2 {
+    font-size: 50px;
+  }
+
   /* /about */
   /* started */
 
@@ -586,15 +618,16 @@ padding-bottom: 20px;
     width: 90%;
     margin: 0 auto;
   }
-  .started .container .free p{
+
+  .started .container .free p {
     padding-left: 120px;
     padding-right: 120px;
   }
 
-  .started .container .free .button{
-  padding: 20px 10px;
-  border-radius: 90px;
-  width: 33%;
+  .started .container .free .button {
+    padding: 20px 10px;
+    border-radius: 90px;
+    width: 33%;
   }
 
   /* /started */
@@ -722,8 +755,9 @@ padding-bottom: 20px;
     height: 650px;
     margin-right: 10%;
   }
-  .about .container .us p{
-  font-size: 20px;
+
+  .about .container .us p {
+    font-size: 20px;
   }
 
   .about .container .help {
@@ -740,6 +774,7 @@ padding-bottom: 20px;
     height: 500px;
     margin: 0 auto;
   }
+
   .started .container .free p {
     padding-left: 50px;
     padding-right: 50px;
